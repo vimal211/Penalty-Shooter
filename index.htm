@@ -12,30 +12,33 @@
     <div class="row">
         <div class="col container">
             <img class="img" src="/assets/Anguilla.png" alt="anguilla">
-            <span class="name" id="team-1-name">Anguilla</span>
-            <div class="row">
-                <div class="col round"></div>
-                <div class="col round"></div>
-                <div class="col round"></div>
-                <div class="col round"></div>
-                <div class="col round"></div>
+            <span class="name" id="team-1-name"></span>
+            <div class="row" id="team-1-round-shoot">
+                <span class="round"></span>
+                <span class="round"></span>
+                <span class="round"></span>
+                <span class="round"></span>
+                <span class="round"></span>
             </div>         
         </div>
         <div class="col container">
             <img class="img" src="/assets/Armenia.png" alt="armenia">
-            <span class="name" id="team-2-name">Armenia</span>
-            <div class="row">
-                <span class="col round"></span>
-                <span class="col round"></span>
-                <span class="col round"></span>
-                <span class="col round"></span>
-                <span class="col round"></span>
+            <span class="name" id="team-2-name"></span>
+            <div class="row" id="team-2-round-shoot">
+                <span class="round"></span>
+                <span class="round"></span>
+                <span class="round"></span>
+                <span class="round"></span>
+                <span class="round"></span>
             </div>         
         </div>
     </div>
     <div class="row"> 
-        <button id='button' class="button">Shoot Armenia</button>
+        <button id='button' class="button" onclick=ButtonClick()></button>
      </div>
+     <div class="row final" id="final-result" >
     </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

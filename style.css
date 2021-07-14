@@ -45,7 +45,7 @@ body{
 
 .round{
     border-radius: 50%;
-    background-color: green;
+    
     width:20px;
     height:20px;
     border: 1px solid black;
@@ -61,4 +61,14 @@ body{
     font-size: large;
     cursor: pointer;
     font-weight: lighter;
+}
+
+.final{
+    background: azure;
+    padding: 15px 0px;
+    margin: 50px 350px 0px 350px;
+    font-weight: bold;
+    font-size:xx-large;
+    border-radius: 5px;
+    border: 1px solid black;
 }
