@@ -37,8 +37,8 @@ let updateButtonText = () =>{
         result.textContent = team1.total === team2.total ? `Match Draw` : `${team1.total>team2.total ? team1.name : team2.name} Wins`;
     }
     else{
-        turn = team1.shoot.length===5 ? 2 :team2.shoot.length===5 ? 1 : turn;
         button.textContent = `Shoot ${turn===1 ? team1.name: team2.name}`;
+        
     }
 }
 
@@ -57,6 +57,7 @@ var ButtonClick = () =>{
         team2.shoot.push(shoot);
         team2.total=calculateTotal(team2.shoot); 
     }
+    changeTurn();
     updateButtonText();
     updateShoot();
 }
@@ -74,5 +75,9 @@ var updateShoot = () =>{
     team2.shoot.forEach((shoot,index)=>{
         shoot===1? teamTwo[index].style.backgroundColor = "green" : teamTwo[index].style.backgroundColor = "red";
     })
-
 }
+
+var changeTurn = () =>{
+    turn = turn===1? 2 : 1;
+}
+
